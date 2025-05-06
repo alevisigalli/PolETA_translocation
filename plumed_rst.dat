@@ -1,0 +1,32 @@
+d453_1: DISTANCE ATOMS={@mda:{resid 436 and name C2},@mda:{resid 453 and name C2}} #TA
+d453_2: DISTANCE ATOMS={@mda:{resid 436 and name N3},@mda:{resid 453 and name N1}}
+d453_3: DISTANCE ATOMS={@mda:{resid 436 and name C4},@mda:{resid 453 and name N6}}
+
+d452_1: DISTANCE ATOMS={@mda:{resid 452 and name C2},@mda:{resid 437 and name C2}} #TA
+d452_2: DISTANCE ATOMS={@mda:{resid 452 and name N3},@mda:{resid 437 and name N1}}
+d452_3: DISTANCE ATOMS={@mda:{resid 452 and name C4},@mda:{resid 437 and name N6}}
+
+d451_1: DISTANCE ATOMS={@mda:{resid 438 and name C2},@mda:{resid 451 and name C2}} #TA
+d451_2: DISTANCE ATOMS={@mda:{resid 438 and name N3},@mda:{resid 451 and name N1}}
+d451_3: DISTANCE ATOMS={@mda:{resid 438 and name C4},@mda:{resid 451 and name N6}}
+
+d450_1: DISTANCE ATOMS={@mda:{resid 439 and name N2},@mda:{resid 450 and name O2}} #GC
+d450_2: DISTANCE ATOMS={@mda:{resid 439 and name N1},@mda:{resid 450 and name N3}}
+d450_3: DISTANCE ATOMS={@mda:{resid 439 and name O6},@mda:{resid 450 and name N4}}
+
+d449_1: DISTANCE ATOMS={@mda:{resid 449 and name C2},@mda:{resid 440 and name C2}} #TA
+d449_2: DISTANCE ATOMS={@mda:{resid 449 and name N3},@mda:{resid 440 and name N1}}
+d449_3: DISTANCE ATOMS={@mda:{resid 449 and name C4},@mda:{resid 440 and name N6}}
+
+d448_1: DISTANCE ATOMS={@mda:{resid 448 and name N2},@mda:{resid 441 and name O2}} #GC
+d448_2: DISTANCE ATOMS={@mda:{resid 448 and name N1},@mda:{resid 441 and name N3}}
+d448_3: DISTANCE ATOMS={@mda:{resid 448 and name O6},@mda:{resid 441 and name N4}}
+
+d447_1: DISTANCE ATOMS={@mda:{resid 442 and name N2},@mda:{resid 447 and name O2}} #GC
+d447_2: DISTANCE ATOMS={@mda:{resid 442 and name N1},@mda:{resid 447 and name N3}}
+d447_3: DISTANCE ATOMS={@mda:{resid 442 and name O6},@mda:{resid 447 and name N4}}
+
+d446_1: DISTANCE ATOMS={@mda:{resid 446 and name N2},@mda:{resid 443 and name O2}} #GC
+d446_2: DISTANCE ATOMS={@mda:{resid 446 and name N1},@mda:{resid 443 and name N3}}
+d446_3: DISTANCE ATOMS={@mda:{resid 446 and name O6},@mda:{resid 443 and name N4}}
+

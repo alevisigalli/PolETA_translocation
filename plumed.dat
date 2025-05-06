@@ -1,0 +1,34 @@
+UNITS ENERGY=kcal/mol LENGTH=A
+MOLINFO STRUCTURE=/work/avisigalli/pdb/wt_pre.pdb
+INCLUDE FILE=/work/avisigalli/plumed/plumed_descriptors.dat
+INCLUDE FILE=/work/avisigalli/opes_exp/plumed_rst.dat
+
+model: PYTORCH_MODEL FILE=/work/avisigalli/plumed/model_t24.ptc ARG=d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d21,d22,d23,d24,d25,d26,d27,d28,d29,d30,d31,d32,d33,d34,d35,d36,d37,d38,d39,d40,d41,d42,d43,d44,d45,d46,d47,d48,d49,d50,d51,d52,d53,d54,d55,d56,d57,d58,d59,d60,d61,d62,d63,d64,d65,d66,d67,d68
+
+OPES_METAD_EXPLORE ...
+   LABEL=opes                                                                                      
+   ARG=model.node-0,model.node-1                                                                                          
+   FILE=/work/avisigalli/opes_exp/cv24_rst/a1/md1/Kernels.data                                                                               
+   RESTART=NO                                                                                     
+   STATE_WFILE=/work/avisigalli/opes_exp/cv24_rst/a1/md1/compressed_Kernels.data                                                             
+   STATE_WSTRIDE=50000                                                                             
+   PACE=500                                                                                        
+   BARRIER=20                                                                                      
+   TEMP=310                                                                                         
+... OPES_METAD_EXPLORE
+
+PRINT ARG=d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d21,d22,d23,d24,d25,d26,d27,d28,d29,d30,d31,d32,d33,d34,d35,d36,d37,d38,d39,d40,d41,d42,d43,d44,d45,d46,d47,d48,d49,d50,d51,d52,d53,d54,d55,d56,d57,d58,d59,d60,d61,d62,d63,d64,d65,d66,d67,d68 STRIDE=500 FILE=/work/avisigalli/opes_exp/cv24_rst/a1/md1/DIST FMT=%8.4f
+
+UPPER_WALLS ARG=model.node-0,model.node-1 AT=7.5,7.5 KAPPA=40000,40000 LABEL=uwall
+LOWER_WALLS ARG=model.node-0,model.node-1 AT=-7.5,-7.5 KAPPA=40000,40000 LABEL=lwall
+
+UPPER_WALLS ARG=d453_1,d453_2,d453_3,d452_1,d452_2,d452_3,d451_1,d451_2,d451_3,d450_1,d450_2,d450_3,d449_1,d449_2,d449_3,d448_1,d448_2,d448_3,d447_1,d447_2,d447_3,d446_1,d446_2,d446_3 AT=4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5 KAPPA=150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0,150.0 LABEL=restraint
+
+PRINT STRIDE=500 ARG=uwall.*,lwall.* FILE=/work/avisigalli/opes_exp/cv24_rst/a1/md1/wall.bias
+
+PRINT ARG=opes.*,model.* STRIDE=500 FILE=/work/avisigalli/opes_exp/cv24_rst/a1/md1/COLVAR FMT=%8.4f
+
+PRINT ARG=restraint.* STRIDE=500 FILE=/work/avisigalli/opes_exp/cv24_rst/a1/md1/restraint.data 
+
+ENDPLUMED
+
