@@ -2,8 +2,7 @@ Supporting data for the paper:
 
 # Coordinated residue motions at the enzyme-substrate interface promote DNA translocation in polymerases.
 
-This repository accompanies a study currently under peer review.
-A link to the published article or preprint will be added here once available.
+[![DOI](https://img.shields.io/badge/DOI-10.1021%2Fjacs.5c05888-blue)](https://doi.org/10.1021/jacs.5c05888)
 
 This repository contains input and output files used in the molecular dynamics and enhanced sampling simulations of DNA translocation by polymerase η (Pol η). These data support the analyses presented in our study, including the definition of a multi-task collective variable (CV) and the reconstruction of the free energy landscape.
 
